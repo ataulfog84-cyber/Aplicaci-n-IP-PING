@@ -1,33 +1,92 @@
-# Herramienta de Red
+# 🛠️ Herramienta de Red 🛠️
 
-Una simple aplicación de escritorio para visualizar información de red y realizar diagnósticos básicos.
+¡Bienvenido a la Herramienta de Red! Una aplicación de escritorio sencilla y eficaz para visualizar información de tu red y realizar diagnósticos de conectividad.
 
-## Características
+## 🖼️ Interfaz de Usuario
 
-*   **Visualiza tu IP Local:** Muestra la dirección IP local de tu máquina en la red.
-*   **Herramienta de Ping:** Permite enviar solicitudes de ping a cualquier dirección IP o nombre de dominio para verificar su conectividad.
+Así es como se ve la aplicación:
 
-## Requisitos
+```
++-----------------------------------------------------+
+| Herramienta de Red                                  |
++-----------------------------------------------------+
+|                                                     |
+|  Tu dirección IP local:   [ 192.168.1.100 ]          |
+|                                                     |
+|  IP para hacer ping: [_________________] [ Ping ]   |
+|                                                     |
+|  +-----------------------------------------------+  |
+|  |                                               |  |
+|  |                                               |  |
+|  |      Resultados del ping aparecerán aquí...   |  |
+|  |                                               |  |
+|  |                                               |  |
+|  +-----------------------------------------------+  |
+|                                                     |
+|  +-----------------------------------------------+  |
+|  | Cambiar Configuración de IP                   |  |
+|  | ---------------------------                   |  |
+|  | Cambiar la IP de forma programática es una    |  |
+|  | operación delicada que requiere permisos de   |  |
+|  | administrador...                              |  |
+|  +-----------------------------------------------+  |
+|                                                     |
++-----------------------------------------------------+
+```
 
-*   Python 3.x
-*   La librería `tkinter` (generalmente incluida en la instalación estándar de Python).
+## ✨ Características Principales
 
-## ¿Cómo usar la aplicación?
+*   **🛰️ Visualiza tu IP Local:** Descubre al instante la dirección IP de tu máquina en la red local.
+*   **📡 Herramienta de Ping:** Envía pings a cualquier IP o dominio para comprobar si está en línea y accesible.
 
-1.  **Ejecutar la aplicación:**
-    Abre una terminal o línea de comandos y ejecuta el siguiente comando en el directorio del proyecto:
+## 🚀 Cómo Empezar
+
+### Requisitos
+
+*   **Python 3.x**
+*   La librería `tkinter` (normalmente viene con Python).
+
+### Ejecución
+
+1.  Abre tu terminal.
+2.  Navega hasta el directorio donde se encuentra `app.py`.
+3.  Ejecuta el siguiente comando:
+
     ```bash
     python app.py
     ```
 
-2.  **Ver tu IP Local:**
-    La aplicación mostrará automáticamente tu dirección IP local en la parte superior de la ventana.
+## 📖 Guía de Uso
 
-3.  **Hacer Ping:**
-    *   Introduce la dirección IP o el nombre de dominio que deseas verificar en el campo de texto "IP para hacer ping".
-    *   Haz clic en el botón "Ping".
-    *   Los resultados del ping aparecerán en el cuadro de texto inferior.
+### Ver tu IP Local
 
-## Nota sobre "Cambiar Configuración de IP"
+Al iniciar la aplicación, tu IP local se mostrará automáticamente en la parte superior.
 
-La sección "Cambiar Configuración de IP" es puramente informativa. Explica que la modificación de la configuración de red es una operación sensible que requiere privilegios de administrador y conocimientos técnicos para evitar problemas de conexión. La aplicación **no** realiza cambios en la configuración de red.
+```
++-----------------------------------------------------+
+|  Tu dirección IP local:   [ 192.168.1.100 ]          |
++-----------------------------------------------------+
+```
+
+### Hacer Ping a una IP
+
+1.  Introduce la IP o el dominio en el campo de texto.
+2.  Haz clic en el botón **"Ping"**.
+3.  Los resultados se mostrarán en el área de texto inferior.
+
+```
++-----------------------------------------------------+
+|  IP para hacer ping: [ google.com      ] [ Ping ]   |
+|                                                     |
+|  +-----------------------------------------------+  |
+|  |                                               |  |
+|  | Haciendo ping a google.com [142.250.200.78]... |  |
+|  | Respuesta desde 142.250.200.78: bytes=32...   |  |
+|  |                                               |  |
+|  +-----------------------------------------------+  |
++-----------------------------------------------------+
+```
+
+## ⚠️ Nota Importante
+
+La sección **"Cambiar Configuración de IP"** es solo informativa. La aplicación **no modifica** la configuración de tu red. Cambiar estos ajustes de forma incorrecta puede causar problemas de conexión.
